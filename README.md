@@ -1,2 +1,10 @@
 # password-project-3
-A website that generate a password once a user enter the criteria
+
+## Description
+A website that generates a random password base off the user input from a series of prompts
+
+## License 
+MIT License 
+
+
+## link for deployed website:
