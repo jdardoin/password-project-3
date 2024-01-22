@@ -82,6 +82,8 @@ function writePassword() {
 }
 
 function generatePassword() {
+  input = [];
+  output = [];
   var length = parseInt(
     prompt("Please choose password length between 8 to 128 characters")
   );
@@ -96,20 +98,25 @@ function generatePassword() {
   if (confirm("Do you want lowercase letters in your password")) {
     input = input.concat(lowerCase);
   } else {
-    alert(" no lowercase letters in your password");
-    return generatePassword();
+    alert("Lowercase letters will not be used in your password");
   }
 
   if (confirm("Do you want Uppercase letters in your password")) {
     input = input.concat(upperCase);
+  } else {
+    alert("Uppercase letters will not be used in your password");
   }
 
   if (confirm("Do you want numbers in your password")) {
     input = input.concat(number);
+  } else {
+    alert("Numbers will not be used in your password");
   }
 
-  if (confirm("Do you want a special char in your password")) {
+  if (confirm("Do you want a special character in your password")) {
     input = input.concat(specialChar);
+  } else {
+    alert("Special characters will not be used in your password");
   }
 
   console.log(input);
