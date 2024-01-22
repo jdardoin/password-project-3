@@ -95,6 +95,9 @@ function generatePassword() {
 
   if (confirm("Do you want lowercase letters in your password")) {
     input = input.concat(lowerCase);
+  } else {
+    alert(" no lowercase letters in your password");
+    return generatePassword();
   }
 
   if (confirm("Do you want Uppercase letters in your password")) {
